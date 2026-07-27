@@ -39,7 +39,36 @@ style="width:100%;padding:12px;margin-top:15px;border:none;border-radius:8px;">
 <option>Rocket</option>
 <h2>Payment</h2>
 <h3>Payment Instructions</h3>
+<h2>Payment</h2>
 
+<div style="background:#1e293b;padding:15px;border-radius:10px;">
+
+<h3>📱 Payment Number</h3>
+
+<p id="payNumber" style="font-size:22px;font-weight:bold;color:#00ff99;">
+01793658160
+</p>
+
+<p>✅ bKash (Personal)</p>
+<p>✅ Nagad</p>
+<p>✅ Rocket</p>
+
+<button onclick="copyNumber()"
+style="padding:10px 20px;background:#ff6a00;color:white;border:none;border-radius:8px;cursor:pointer;">
+📋 Copy Payment Number
+</button>
+
+</div>
+
+<script>
+function copyNumber(){
+const number=document.getElementById("payNumber").innerText;
+
+navigator.clipboard.writeText(number);
+
+alert("✅ Payment Number Copied: "+number);
+}
+</script>
 <ol>
 <li>bKash Personal: <b>01793658160</b> নম্বরে টাকা পাঠান।</li>
 <li>টাকা পাঠানোর পর Transaction ID কপি করুন।</li>
