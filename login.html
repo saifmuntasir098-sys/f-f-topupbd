@@ -1,1 +1,24 @@
 
+// FF TOPUP BD Demo
+
+function buyDiamond(packageName, price) {
+    const uid = prompt("Enter your Free Fire UID:");
+
+    if (!uid) {
+        alert("Please enter your UID.");
+        return;
+    }
+
+    alert(
+        "Order Successful (Demo)\n\n" +
+        "UID: " + uid +
+        "\nPackage: " + packageName +
+        "\nPrice: " + price +
+        "\n\nThank you for using FF TOPUP BD."
+    );
+}
+
+// Welcome Message
+window.onload = function () {
+    console.log("FF TOPUP BD Loaded Successfully");
+};
