@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Up - FF TOPUP BD</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<header>
+<h1>🔥 FF TOPUP BD</h1>
+<p>Free Fire Diamond Top Up</p>
+</header>
+
+<div style="max-width:500px;margin:30px auto;background:#1e293b;padding:20px;border-radius:12px;">
+
+<h2 style="text-align:center;">Top Up</h2>
+
+<input type="text" id="uid" placeholder="Enter Player UID"
+style="width:100%;padding:12px;margin-top:15px;border:none;border-radius:8px;">
+
+<select id="diamond"
+style="width:100%;padding:12px;margin-top:15px;border:none;border-radius:8px;">
+
+<option>100 Diamonds - ৳85</option>
+<option>310 Diamonds - ৳245</option>
+<option>520 Diamonds - ৳395</option>
+<option>1060 Diamonds - ৳790</option>
+
+</select>
+
+<select
+style="width:100%;padding:12px;margin-top:15px;border:none;border-radius:8px;">
+
+<option>bKash</option>
+<option>Nagad</option>
+<option>Rocket</option>
+
+</select>
+
+<button
+onclick="orderNow()"
+style="width:100%;padding:12px;margin-top:20px;background:#ff6a00;color:white;border:none;border-radius:8px;font-size:18px;">
+
+Buy Now
+
+</button>
+
+<p style="text-align:center;margin-top:20px;">
+<a href="dashboard.html" style="color:#00e5ff;">Dashboard</a>
+</p>
+
+<p style="text-align:center;">
+<a href="index.html" style="color:#00ff99;">⬅ Back Home</a>
+</p>
+
+</div>
+
+<script>
+function orderNow(){
+
+let uid=document.getElementById("uid").value;
+let pack=document.getElementById("diamond").value;
+
+if(uid==""){
+alert("Please enter Player UID");
+return;
+}
+
+alert("Demo Order Successful\n\nUID: "+uid+"\n"+pack);
+
+}
+</script>
+
+</body>
+</html>
